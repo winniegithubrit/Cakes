@@ -1,0 +1,80 @@
+body{
+  background-color: antiquewhite;
+}
+/* when you want the links on the navbar to arrange them selves */
+.header li{
+  display: inline;
+  padding: 14%;
+  align-items: center;
+}
+.header a{
+  /* to remove the lines below the links in the nav bar */
+  text-decoration: none;  
+  color: black; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: xx-large;
+
+}
+/* Select the Font Awesome icon within the "Home" link */
+.fa-solid.fa-caret-down {background-color: blue;
+
+  /* Set the icon color to blue */
+  color: black;
+
+  /* Increase the icon size */
+  font-size: 24px;
+
+  /* Add some margin to the right to separate it from the text */
+  margin-right: 5px;
+
+  /* You can apply other CSS styles as needed */
+}
+.images img{
+  width: 30%;
+  height: 10%;
+}
+.images{
+  display: flex;
+  padding: 1%;
+  justify-content: space-between;
+  
+}
+.btn{
+  
+  background-color: #4CAF50;
+   
+    border: none;
+    color: black;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    font-size: larger;
+
+}
+.btn:hover{
+  background-color: blueviolet;
+
+}
+/* responsiveness under all screens */
+@media screen and (max-width: 768px) {
+  body{
+    background-color: aquamarine
+    ;
+    
+  }
+  .header a {
+    font-size: 100px;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .header li{
+    flex-direction: column;
+    margin-right:  90px;
+  }
+}
